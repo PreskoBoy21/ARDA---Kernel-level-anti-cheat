@@ -1,0 +1,82 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{csquotes}
+\usepackage{caption}
+\geometry{margin=1in}
+\setstretch{1.3}
+
+\title{Kernel-Level Anti-Cheat Systems:\\Security, Ethics, and Effectiveness}
+\author{Your Name \\ Fontys University of Applied Sciences}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\subsection{Context and Background}
+Online multiplayer games rely heavily on fairness and competition. To maintain integrity, developers employ anti-cheat systems designed to detect unauthorized software or player modifications. 
+Traditional \textbf{user-level anti-cheat systems} operate within normal user permissions, whereas \textbf{kernel-level anti-cheats} have access to the operating system’s core (Ring 0), enabling deeper inspection of processes and drivers. 
+
+\subsection{Problem Statement and Research Questions}
+This paper examines whether the advantages of kernel-level anti-cheat software justify its risks. The guiding research questions are:
+\begin{itemize}
+    \item How does kernel-level anti-cheat work compared to user-level anti-cheat?
+    \item What are the main security risks?
+    \item Is it worth exposing system data to prevent cheating?
+    \item Is kernel-level anti-cheat ethical?
+\end{itemize}
+
+\subsection{Hypothesis}
+Kernel-level anti-cheat systems provide superior cheat detection and prevention compared to user-level alternatives, but raise significant concerns regarding privacy, data security, and ethical justification.
+
+\section{Methods}
+This research uses a literature review approach, combining cybersecurity analyses, technical documentation, and community perspectives. Sources include academic papers, software whitepapers, and official statements from companies such as Riot Games (Vanguard) and Epic Games (Easy Anti-Cheat).
+
+\section{Results}
+The results show that kernel-level anti-cheats operate at a much deeper system level, providing better detection but introducing higher potential for:
+\begin{itemize}
+    \item Exploitation by malware (rootkit-like vulnerabilities)
+    \item Privacy concerns due to unrestricted system access
+    \item Reduced transparency for the end user
+\end{itemize}
+
+A summary comparison:
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Aspect} & \textbf{User-Level} & \textbf{Kernel-Level} \\ \hline
+Access Privileges & Limited (Ring 3) & Full OS Access (Ring 0) \\ \hline
+Detection Accuracy & Moderate & High \\ \hline
+Security Risk & Low & High (possible rootkit behavior) \\ \hline
+User Control & High & Low \\ \hline
+\end{tabular}
+\end{center}
+
+\section{Discussion}
+Kernel-level anti-cheats are more efficient in identifying advanced cheats that manipulate memory or drivers. However, their elevated privileges make them controversial. From an ethical standpoint, they challenge user autonomy and privacy—installing drivers that run continuously and monitor system behavior.
+
+While companies justify this by aiming for fair gameplay, critics argue it mirrors invasive surveillance, with potential misuse if exploited or poorly secured. The debate highlights the trade-off between \textit{security and freedom} within gaming environments.
+
+\section{Evaluation}
+Kernel-level anti-cheats undeniably improve detection efficiency but introduce major risks. Whether they are “worth it” depends on user priorities: fairness versus personal privacy. A balanced alternative could involve hybrid systems or sandboxed kernel access.
+
+\section{Conclusion}
+Kernel-level anti-cheat systems mark a technical leap forward but a moral step backward. Future approaches should focus on transparency, opt-in mechanisms, and open communication between developers and players to maintain trust.
+
+\section{References}
+\begin{itemize}
+    \item Riot Games. (2020). \textit{Riot Vanguard: Security Overview.}
+    \item Epic Games. (2021). \textit{Easy Anti-Cheat Whitepaper.}
+    \item Microsoft. (2022). \textit{Windows Kernel Security Architecture.}
+    \item Reddit, Steam, and community forums discussing anti-cheat privacy debates.
+\end{itemize}
+
+\end{document}
