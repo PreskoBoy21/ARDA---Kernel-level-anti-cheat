@@ -10,7 +10,7 @@
 \geometry{margin=2.5cm}
 \onehalfspacing
 
-\title{Student Perceptions of Kernel-Level Anti-Cheat Systems}
+\title{User Perceptions of Kernel-Level Anti-Cheat Systems:\\Privacy, Trust, and Ethical Considerations}
 \author{Preslav Stoyanov, Jean-Paul Otten}
 \date{\today}
 
@@ -19,7 +19,7 @@
 % Title Page
 \begin{titlepage}
 \centering
-{\Large\textbf{Student Perceptions of Kernel-Level Anti-Cheat Systems}}\\[1.5cm]
+{\Large\textbf{User Perceptions of Kernel-Level Anti-Cheat Systems:\\Privacy, Trust, and Ethical Considerations}}\\[1.5cm]
 {\large Preslav Stoyanov, Jean-Paul Otten}\\[0.5cm]
 {\large \today}\\[2cm]
 \end{titlepage}
@@ -29,13 +29,13 @@
 \newpage
 
 \begin{abstract}
-Kernel-level anti-cheat systems have become increasingly common in modern competitive online games, providing developers with powerful tools to detect cheating at the operating system's highest privilege level. However, this deep level of system access has sparked significant debate concerning privacy, security, and user trust. This research investigates student awareness, perceptions, and acceptance of kernel-level anti-cheat technologies. Through a quantitative survey-based methodology, this study aims to assess how students evaluate the trade-off between fair gameplay and potential privacy risks.
+Kernel-level anti-cheat systems have become increasingly common in modern competitive online games, providing developers with powerful tools to detect cheating at the operating system's highest privilege level. However, this deep level of system access has sparked significant debate concerning privacy, security, and user trust. This research investigates user perceptions and ethical considerations surrounding kernel-level anti-cheat technologies through a systematic literature review. By synthesizing existing academic research, technical documentation, public discourse, and community perspectives, this study aims to provide a comprehensive analysis of how users evaluate the trade-off between fair gameplay and potential privacy risks, with particular attention to implications for students and technically literate users.
 \end{abstract}
 
 % -------------------------------------------------------------
 \section{Introduction}
 
-This chapter introduces the research topic, outlines its significance within the academic and technological landscape, and provides an extensive contextual foundation for understanding kernel-level anti-cheat systems. The growing dependence on online multiplayer games has resulted in a parallel increase in cheat development, creating a persistent challenge for game developers and cybersecurity professionals. This introduction further elaborates on the problem framing, explores the historical and technical evolution of anti-cheat technology, and presents the research objectives, questions, and hypotheses shaping this research.
+This chapter introduces the research topic, outlines its significance within the academic and technological landscape, and provides an extensive contextual foundation for understanding kernel-level anti-cheat systems. The growing dependence on online multiplayer games has resulted in a parallel increase in cheat development, creating a persistent challenge for game developers and cybersecurity professionals. This introduction further elaborates on the problem framing, explores the historical and technical evolution of anti-cheat technology, and presents the research objectives and questions guiding this literature review.
 
 \subsection{Context and Background}
 
@@ -65,7 +65,7 @@ Kernel-level anti-cheats have become a focal point for debates surrounding digit
 
 Furthermore, online discussions on platforms like Reddit and GitHub provide extensive anecdotal evidence of fear, suspicion, or outright rejection of kernel-level anti-cheat requirements \cite{reddit, gist}. Users commonly cite worries about privacy invasion, potential for misuse, transparency issues, and the possibility that vulnerabilities within the anti-cheat software could be exploited by malicious third-party actors. These concerns contribute not only to reduced trust in game developers but also to broader questions surrounding the ethics of such invasive technological interventions.
 
-Despite these concerns, kernel-level anti-cheats have become increasingly prevalent. The database maintained by Levvvel \cite{levvvel} demonstrates a clear upward trend in the number of online games requiring these technologies, illustrating the perceived necessity within the industry. Given that students—particularly those studying informatics, cybersecurity, or related fields—represent a demographic highly likely to interact with such systems, their perceptions serve as an insightful indicator of broader public acceptance.
+Despite these concerns, kernel-level anti-cheats have become increasingly prevalent. The database maintained by Levvvel \cite{levvvel} demonstrates a clear upward trend in the number of online games requiring these technologies, illustrating the perceived necessity within the industry. Given that students—particularly those studying informatics, cybersecurity, or related fields—represent a demographic highly likely to interact with such systems, their perceptions serve as an insightful indicator of broader public acceptance patterns.
 
 At the same time, students possess greater-than-average technical literacy, allowing them to form more nuanced opinions on topics related to digital privacy, kernel security, operating-system architecture, and ethical technological deployment. Therefore, studying student perceptions yields data that is more informed than general consumer sentiment, while also reflecting the attitudes of the next generation of industry professionals.
 
@@ -73,196 +73,387 @@ This convergence of technological necessity, public controversy, and academic re
 
 \subsection{Research Problem}
 
-The widespread adoption of kernel-level anti-cheat systems has created a significant tension between the technical necessity of preventing cheating and the privacy and security concerns of users. While game developers increasingly rely on these systems to maintain competitive integrity, public discourse reveals substantial apprehension regarding their invasive nature and potential risks \cite{xda, reddit, gist}. Despite the growing prevalence of kernel-level anti-cheats across major gaming titles \cite{levvvel}, there is limited empirical research investigating how well-informed users, particularly students with technical backgrounds, perceive, evaluate, and accept these technologies.
+The widespread adoption of kernel-level anti-cheat systems has created a significant tension between the technical necessity of preventing cheating and the privacy and security concerns of users. While game developers increasingly rely on these systems to maintain competitive integrity, public discourse reveals substantial apprehension regarding their invasive nature and potential risks \cite{xda, reddit, gist}. Despite the growing prevalence of kernel-level anti-cheats across major gaming titles \cite{levvvel}, the existing body of knowledge on user perceptions remains fragmented across academic research, technical documentation, community discussions, and media coverage.
 
-The existing literature and public discourse primarily focus on technical security assessments or anecdotal community discussions, leaving a gap in systematic quantitative research on user perceptions. Understanding how students—who represent both current users and future technology professionals—evaluate the trade-off between fair gameplay and privacy risks is crucial for developers, policymakers, and the academic community. This research aims to fill this gap by providing empirical insights into student awareness, concerns, trust levels, and acceptance of kernel-level anti-cheat systems.
+The existing literature encompasses technical security assessments, company whitepapers, anecdotal community discussions, and technology journalism, but lacks a systematic synthesis that comprehensively addresses user perceptions, ethical considerations, and the privacy-trust trade-offs involved. Understanding how users—particularly those with technical literacy, including students in cybersecurity and related fields—perceive, evaluate, and accept these technologies is crucial for developers, policymakers, and the academic community. This research aims to synthesize existing knowledge and identify gaps in understanding user perceptions, concerns, trust levels, and acceptance of kernel-level anti-cheat systems.
 
 \subsection{Research Objective}
 
-The primary objective of this research is to quantitatively investigate and analyse student perceptions of kernel-level anti-cheat systems in modern online games. Specifically, this study aims to:
+The primary objective of this research is to systematically review and synthesize existing literature on user perceptions of kernel-level anti-cheat systems in modern online games. Specifically, this study aims to:
 
 \begin{enumerate}
-    \item Measure student awareness of kernel-level anti-cheat technologies and their understanding of associated risks.
-    \item Quantify student acceptance and willingness to use games requiring kernel-level anti-cheat systems.
-    \item Assess the levels of privacy concerns, security worries, and trust in game developers among students.
-    \item Identify relationships between student characteristics (technical knowledge, gaming habits, field of study) and their perceptions of kernel-level anti-cheat systems.
-    \item Explore how perceived invasiveness correlates with acceptance of these technologies.
+    \item Synthesize existing research and discourse on user awareness of kernel-level anti-cheat technologies and associated risks.
+    \item Analyse patterns in user acceptance and attitudes toward games requiring kernel-level anti-cheat systems as reflected in academic literature and public discourse.
+    \item Review and consolidate findings on privacy concerns, security worries, and trust in game developers among users.
+    \item Identify factors (technical knowledge, gaming habits, demographic characteristics) that influence user perceptions, as documented in existing research and discussions.
+    \item Examine how perceived invasiveness relates to acceptance of these technologies, based on existing evidence.
+    \item Identify gaps in current knowledge and areas requiring further empirical research.
 \end{enumerate}
 
 \subsection{Research Questions}
 
-Based on the research problem and objectives, the following research questions guide this investigation:
+Based on the research problem and objectives, the following research questions guide this literature review:
 
 \begin{enumerate}
-    \item To what extent are students aware of kernel-level anti-cheat systems and their implications?
-    \item How do students evaluate the acceptability of kernel-level anti-cheat technologies in online games?
-    \item What are the primary concerns (privacy, security, transparency) that influence student perceptions?
-    \item How much trust do students place in game developers and companies that implement kernel-level anti-cheats?
-    \item What factors (technical knowledge, gaming experience, field of study) correlate with student acceptance or rejection of kernel-level anti-cheat systems?
+    \item What do existing sources reveal about user awareness of kernel-level anti-cheat systems and their implications?
+    \item How do users evaluate the acceptability of kernel-level anti-cheat technologies in online games, according to existing research and discourse?
+    \item What are the primary concerns (privacy, security, transparency) that influence user perceptions, as documented in the literature?
+    \item What levels of trust do users place in game developers and companies that implement kernel-level anti-cheats, based on existing evidence?
+    \item What factors (technical knowledge, gaming experience, demographic characteristics) are associated with user acceptance or rejection of kernel-level anti-cheat systems in existing research?
+    \item What gaps exist in current understanding of user perceptions that require further empirical investigation?
 \end{enumerate}
 
-\subsection{Hypotheses}
+\subsection{Research Propositions}
 
-Based on the context, research problem, and objectives outlined above, the following hypotheses are proposed:
+Based on the context, research problem, and objectives outlined above, the following propositions derived from existing literature guide this review:
 
 \begin{itemize}
-    \item \textbf{H1:} Students who are more aware of kernel-level anti-cheat systems exhibit higher levels of privacy concerns.
-    \item \textbf{H2:} Students exhibit lower trust toward companies that implement kernel-level anti-cheats.
-    \item \textbf{H3:} Students with greater technical knowledge express stronger concerns about kernel-level drivers.
-    \item \textbf{H4:} Despite concerns, some students are willing to sacrifice privacy for fair gameplay.
-    \item \textbf{H5:} Higher perceived invasiveness negatively correlates with acceptance of kernel-level anti-cheat systems.
+    \item \textbf{P1:} Users with greater awareness of kernel-level anti-cheat systems exhibit higher levels of privacy concerns, as suggested by technical communities and cybersecurity discussions.
+    \item \textbf{P2:} Users exhibit lower trust toward companies that implement kernel-level anti-cheats, as evidenced in public discourse and community discussions.
+    \item \textbf{P3:} Users with greater technical knowledge express stronger concerns about kernel-level drivers, as reflected in cybersecurity and technical community perspectives.
+    \item \textbf{P4:} Despite concerns, some users are willing to sacrifice privacy for fair gameplay, as indicated by continued adoption of games requiring kernel-level anti-cheat.
+    \item \textbf{P5:} Higher perceived invasiveness negatively correlates with acceptance of kernel-level anti-cheat systems, as suggested by privacy-focused discussions and user complaints.
 \end{itemize}
 
-These hypotheses will be tested through quantitative survey data analysis, examining associations between variables rather than causal relationships, given the cross-sectional nature of this research design.
+These propositions are explored through systematic analysis of existing literature, community discourse, and documented user reactions, rather than through primary data collection.
 
 % -------------------------------------------------------------
 \section{Methods}
 % -------------------------------------------------------------
 
-This chapter describes the methodological approach used to analyse student perceptions of kernel-level anti-cheat systems.
+This chapter describes the methodological approach used to systematically review and synthesize existing literature on user perceptions of kernel-level anti-cheat systems.
 
 \subsection{Choice of Method}
 
-A \textbf{quantitative survey} is selected as the primary method due to:
+A \textbf{systematic literature review} is selected as the primary method due to:
 
 \begin{itemize}
-    \item scalability for large student populations,
-    \item ability to measure attitudes numerically,
-    \item suitability for correlation analysis,
-    \item anonymity, which encourages honest responses,
-    \item ethical simplicity (no system-level software required).
+    \item the fragmented nature of existing research across multiple domains (cybersecurity, ethics, gaming studies),
+    \item the need to synthesize diverse sources including academic research, technical documentation, and public discourse,
+    \item the ability to identify patterns and gaps in current understanding,
+    \item time and resource efficiency compared to primary data collection,
+    \item the value of providing a comprehensive overview for future research directions.
 \end{itemize}
 
-\subsection{Participants}
+This approach allows for the integration of multiple types of sources, providing a holistic view of user perceptions while acknowledging the limitations of secondary data analysis.
 
-Participants include students from various faculties:
+\subsection{Literature Search Strategy}
+
+The literature search was conducted using multiple strategies to ensure comprehensive coverage:
+
+\paragraph{Academic Databases}
+Academic sources were identified through searches in databases including Google Scholar, IEEE Xplore, ACM Digital Library, and university library databases. Search terms included combinations of: ``kernel-level anti-cheat,'' ``anti-cheat privacy,'' ``game security privacy concerns,'' ``rootkit anti-cheat,'' ``Riot Vanguard,'' and ``gaming privacy ethics.''
+
+\paragraph{Technical Documentation}
+Official documentation and whitepapers from companies implementing kernel-level anti-cheat systems were reviewed, including Riot Games' Vanguard documentation, Epic Games' Easy Anti-Cheat materials, and BattlEye technical information.
+
+\paragraph{Public Discourse Sources}
+Community discussions and public discourse were examined through sources including:
+\begin{itemize}
+    \item Technology journalism and news articles (e.g., XDA Developers, technology blogs),
+    \item Community discussions on platforms like Reddit and GitHub,
+    \item Video content from technical channels explaining kernel-level anti-cheat,
+    \item Gaming industry databases tracking anti-cheat adoption.
+\end{itemize}
+
+These sources are methodologically appropriate for studying \emph{user perceptions} rather than factual system behavior. Community discourse captures authentic user reactions, concerns, and attitudes that empirical surveys would measure, while providing access to discussions that may not be captured in formal research. Technology journalism offers expert analysis that reflects broader community perspectives, and platform discussions reveal unmediated user sentiment. This approach recognizes that perceptions themselves are valid research subjects, independent of technical accuracy, as they shape user decision-making and acceptance regardless of objective system characteristics.
+
+\subsection{Source Selection Criteria}
+
+Sources were included based on the following criteria:
 
 \begin{itemize}
-    \item Information Technology
-    \item Cybersecurity
-    \item Game Design / Development
-    \item Business / Economics
-    \item Engineering
+    \item \textbf{Relevance:} Sources must address user perceptions, privacy concerns, trust, acceptance, or ethical considerations related to kernel-level anti-cheat systems.
+    \item \textbf{Recency:} Preference given to sources from 2020 onwards, reflecting the recent proliferation of kernel-level anti-cheat systems, though historical context sources were also considered.
+    \item \textbf{Credibility:} Sources include peer-reviewed academic work, official company documentation, reputable technology journalism, and substantial community discussions with clear authorship or attribution.
+    \item \textbf{Accessibility:} Sources are publicly accessible or available through academic databases.
 \end{itemize}
 
-Students are ideal due to their familiarity with digital systems, high gaming participation, and elevated privacy awareness.
+\subsection{Data Extraction and Analysis}
 
-\subsection{Sampling Strategy}
+The review process involved:
 
-A stratified convenience sampling strategy ensures representation across technical and non-technical groups. Target sample size: 100–200 participants.
+\paragraph{1. Source Classification}
+Sources were categorized by type: (1) academic research, (2) technical documentation, (3) technology journalism, (4) community discourse, and (5) industry data/statistics.
 
-\subsection{Survey Structure and Variable Operationalization}
+\paragraph{2. Thematic Analysis}
+Content was analyzed to identify recurring themes related to:
+\begin{itemize}
+    \item User awareness and knowledge of kernel-level anti-cheat systems
+    \item Privacy concerns and perceived risks
+    \item Trust in game developers and companies
+    \item Acceptance and willingness to use games with kernel-level anti-cheat
+    \item Factors influencing perceptions (technical knowledge, gaming habits, etc.)
+    \item Ethical considerations and debates
+\end{itemize}
 
-The survey contains structured questions designed to measure the key constructs of interest:
+\paragraph{3. Synthesis}
+Findings from diverse sources were synthesized to identify patterns, contradictions, and consensus regarding user perceptions. The synthesis process involved:
+\begin{itemize}
+    \item Comparing perspectives across different source types
+    \item Identifying areas of agreement and disagreement
+    \item Noting gaps in existing knowledge
+    \item Examining how different user groups (technically literate vs. general users, students vs. broader demographics) are represented in the literature
+\end{itemize}
+
+\subsection{Quality Assessment}
+
+Source quality was assessed using the following considerations:
 
 \begin{itemize}
-    \item Likert-scale items (1–5) for measuring attitudes and perceptions
-    \item Multiple choice questions for categorical variables
-    \item Demographic questions for participant classification
-    \item Questions on trust, acceptance, privacy, and awareness
+    \item For academic sources: peer review status, methodology rigor, sample size and representativeness (where applicable).
+    \item For technical documentation: official source status, technical accuracy, completeness of information.
+    \item For journalism and community sources: author credibility, source verification, breadth of perspective represented.
 \end{itemize}
 
-Questions are phrased neutrally to avoid bias. The following constructs are operationalized as follows:
-
-\paragraph{Privacy Concerns (Dependent Variable)}
-Measured using a 5-point Likert scale (1 = Not concerned, 5 = Extremely concerned) through items such as: ``How concerned are you about the privacy implications of kernel-level anti-cheat?'' and ``Kernel-level anti-cheat systems invade my privacy'' (1 = Strongly disagree, 5 = Strongly agree). A composite privacy concerns score is calculated as the mean of relevant items.
-
-\paragraph{Acceptance (Dependent Variable)}
-Operationalized through two measures: (1) a 5-point Likert scale item asking ``How acceptable do you find kernel-level anti-cheat in games?'' (1 = Not acceptable, 5 = Completely acceptable), and (2) a categorical question asking whether participants would continue playing a game requiring kernel-level anti-cheat (Yes without hesitation / Yes with concerns / No, I would avoid it).
-
-\paragraph{Trust (Dependent Variable)}
-Measured using a 5-point Likert scale (1 = No trust, 5 = Complete trust) through items such as: ``To what extent do you trust game developers to use kernel-level anti-cheat responsibly?'' A trust score is calculated based on participant responses.
-
-\paragraph{Awareness (Independent Variable)}
-Operationalized as a categorical variable with three levels (Very aware / Somewhat aware / Not at all aware), measured by the question: ``Before this survey, were you aware of kernel-level anti-cheat systems?''
-
-\paragraph{Technical Knowledge (Independent Variable)}
-Measured on a 5-point Likert scale (1 = Not knowledgeable, 5 = Very knowledgeable) through self-reported responses to: ``How knowledgeable are you about the technical details of kernel-level anti-cheat systems?'' Additionally, field of study serves as a proxy indicator (Technical fields: IT, Cybersecurity, Engineering vs. Non-technical fields: Business, Economics, Game Design).
-
-\paragraph{Perceived Invasiveness (Independent Variable)}
-Measured using a 5-point Likert scale (1 = Not invasive, 5 = Extremely invasive) through items asking participants to rate how invasive they perceive kernel-level anti-cheat systems to be.
-
-\paragraph{Gaming Habits (Control Variable)}
-Categorized as Daily / Weekly / Monthly / Rarely, measured through: ``How frequently do you play games?'' This variable is used for comparative analysis between gamers and non-gamers.
-
-\paragraph{Demographic Variables}
-Including field of study, gaming frequency, and self-reported technical knowledge level, used for stratification and comparative analysis.
-
-\subsection{Data Collection}
-
-Data is collected anonymously via Google Forms / MS Forms. The procedure:
-
-\begin{enumerate}
-    \item Participants receive link and consent information.
-    \item They complete the survey.
-    \item Responses exported as CSV.
-\end{enumerate}
-
-No personal data (IP, email, identifiers) is collected.
-
-\subsection{Ethical Considerations}
-
-The study avoids installing or testing kernel drivers. All data is anonymous. Participation is voluntary. No sensitive personal information is requested.
-
-\subsection{Data Transformation}
-
-Before analysis, the dataset is cleaned:
-
-\begin{itemize}
-    \item incomplete responses removed,
-    \item text fields standardised,
-    \item variables encoded numerically,
-    \item Likert responses validated.
-\end{itemize}
-
-\subsection{Data Analysis}
-
-The analysis follows three main steps:
-
-\paragraph{1. Descriptive Statistics}
-Descriptive statistics are calculated for all measured variables, including means and medians for Likert-scale items (privacy concerns, acceptance, trust, perceived invasiveness, technical knowledge) and frequency distributions for categorical variables (awareness, gaming habits, field of study). These statistics provide an overview of student perceptions and demographic characteristics.
-
-\paragraph{2. Comparative Analysis}
-Comparative analysis examines differences between subgroups using appropriate statistical tests (e.g., t-tests, ANOVA). Key comparisons include:
-\begin{itemize}
-    \item Technical vs. non-technical fields: Differences in privacy concerns, trust, and acceptance
-    \item High vs. low technical knowledge: Differences in awareness and risk perception
-    \item Gamers vs. non-gamers: Differences in acceptance and willingness to use games with kernel-level anti-cheat
-    \item High vs. low awareness: Differences in privacy concerns and trust
-\end{itemize}
-
-\paragraph{3. Correlation Analysis}
-Correlation analysis (Pearson's r or Spearman's rho, depending on variable scales) examines relationships between key variables:
-\begin{itemize}
-    \item Privacy concerns and acceptance of kernel-level anti-cheat (H5)
-    \item Awareness and privacy concerns (H1)
-    \item Technical knowledge and concerns about kernel-level drivers (H3)
-    \item Trust and acceptance
-    \item Perceived invasiveness and acceptance (H5)
-    \item Gaming habits and acceptance
-\end{itemize}
-
-These analyses address the research questions and test the proposed hypotheses, examining associations rather than causal relationships due to the cross-sectional design.
-
-\subsection{Data Visualisation}
-
-Visualisations include:
-
-\begin{itemize}
-    \item bar charts,
-    \item histograms,
-    \item stacked comparison charts,
-    \item correlation matrices.
-\end{itemize}
+Limitations of individual sources were acknowledged in the synthesis, particularly noting the predominance of anecdotal evidence in community discussions versus empirical research in academic literature.
 
 \subsection{Methodological Limitations}
 
+This literature review approach has several limitations:
+
 \begin{itemize}
-    \item Self-report bias.
-    \item Non-random sampling.
-    \item Limited generalisability beyond students.
-    \item No technical behavioural testing.
+    \item \textbf{Publication Bias:} Negative reactions or concerns may be overrepresented in public discourse, while positive acceptance may be underrepresented if users simply accept and continue using games.
+    \item \textbf{Source Heterogeneity:} Combining academic research with community discourse creates challenges in comparability and quality assessment.
+    \item \textbf{Temporal Limitations:} Perceptions may evolve rapidly as technologies mature and users become more familiar with kernel-level anti-cheat systems.
+    \item \textbf{Lack of Primary Data:} The review cannot provide original empirical insights, only synthesis of existing knowledge.
+    \item \textbf{Representativeness:} Community discourse sources may not represent all user perspectives, particularly those of less vocal or less technically engaged users.
+    \item \textbf{Gaps in Literature:} Limited empirical research specifically on user perceptions means the review relies heavily on anecdotal evidence and theoretical discussions.
 \end{itemize}
+
+Despite these limitations, the literature review provides valuable synthesis of existing knowledge and identifies critical areas where empirical research is needed.
+
+% -------------------------------------------------------------
+\section{Results}
+% -------------------------------------------------------------
+
+This section presents the findings from the systematic literature review, synthesizing evidence from academic research, technical documentation, technology journalism, and public discourse on user perceptions of kernel-level anti-cheat systems.
+
+\subsection{User Awareness of Kernel-Level Anti-Cheat Systems}
+
+Evidence indicates significant variation in user awareness of kernel-level anti-cheat systems. Awareness levels correlate closely with technical literacy and engagement with gaming communities. According to the comprehensive database maintained by Levvvel \cite{levvvel}, 338 games currently implement kernel-level anti-cheat software, indicating widespread industry adoption. However, evidence from community discussions suggests that many users remain unaware of what kernel-level anti-cheat entails or how it differs from traditional user-level protection \cite{reddit}.
+
+Technical communities and cybersecurity-focused discussions demonstrate higher awareness levels. The GitHub Gist analysis by a cybersecurity researcher provides detailed technical explanations that indicate users with technical backgrounds are more likely to understand the implications of kernel-level access \cite{gist}. These users demonstrate awareness of concepts such as Ring 0 privileges, rootkit-like behaviour, and system-level monitoring capabilities. In contrast, general gaming communities show lower awareness, with many users expressing surprise upon learning that anti-cheat software runs at the kernel level \cite{reddit}.
+
+The YouTube explanation by PirateSoftware \cite{piratevideo} suggests that educational content plays a crucial role in awareness. Users who engage with technical explanations demonstrate greater understanding of both the security benefits and privacy risks associated with kernel-level anti-cheat systems. However, even technically aware users often lack complete understanding of what data these systems can access or how long they remain active on systems \cite{gist}.
+
+A notable pattern emerges: users who discover kernel-level anti-cheat requirements often express surprise or concern, particularly when learning that drivers launch on system startup and maintain persistent access even when games are not running \cite{reddit, gist}. This suggests that many users accept anti-cheat systems without full awareness of their operational characteristics or privacy implications.
+
+\subsection{Privacy Concerns and Perceived Risks}
+
+Privacy concerns emerge as the dominant theme across all examined sources. The fundamental issue centres on the unrestricted system access that kernel-level drivers provide. As the XDA Developers analysis emphasizes, kernel-level anti-cheat systems operate with the highest privilege level possible, granting them access to virtually all system-level data \cite{xda}. The GitHub Gist provides detailed technical analysis explaining that kernel-level drivers can ``access and monitor everything on your system, including all processes, memory, network traffic, hardware, and sensitive data'' \cite{gist}.
+
+Multiple sources consistently compare kernel-level anti-cheat systems to rootkits due to their operational similarities. Both operate at the kernel level, run continuously in the background, launch on system startup, and maintain persistent system access \cite{xda, gist}. This comparison generates significant concern among users, as rootkits are universally recognized as malicious software. As noted in the technical analysis, ``kernel-level anti-cheat behaves almost identically to malware and rootkits'' \cite{gist}, which contributes to user discomfort and suspicion.
+
+Security vulnerability concerns are extensively documented. The XDA Developers article warns that vulnerabilities in kernel-level drivers can compromise the entire operating system, as they operate at the same privilege level as the OS kernel itself \cite{xda}. Security researchers emphasize that poorly designed or compromised anti-cheat drivers could enable privilege escalation attacks, allowing malicious actors to gain complete system control \cite{xda}. The GitHub analysis highlights specific examples where kernel-level anti-cheat vulnerabilities have been exploited \cite{gist}, reinforcing these concerns.
+
+Transparency and data collection concerns feature prominently in user discussions. Multiple sources indicate that companies provide limited or vague information about what data their anti-cheat systems collect, how long they run, what they monitor, and how data is stored or transmitted \cite{gist, reddit}. Users express frustration with the lack of transparency, noting that they must trust companies' claims about data limitations without verifiable evidence \cite{reddit}. The GitHub Gist analysis notes that many users feel uncomfortable being unable to verify what information kernel-level drivers access or transmit \cite{gist}.
+
+The informed consent issue is repeatedly raised in community discussions. Users express discomfort with the binary choice presented: either accept kernel-level anti-cheat or lose access to games they have purchased \cite{reddit}. This perceived lack of meaningful choice contributes to privacy concerns, as users feel coerced into accepting invasive software regardless of their comfort level with the privacy implications \cite{reddit, gist}.
+
+\subsection{Trust in Game Developers and Companies}
+
+Evidence indicates generally low trust levels toward game developers and companies implementing kernel-level anti-cheat systems. Community discussions consistently express skepticism about developers' claims regarding data collection, system monitoring, and security practices \cite{reddit}. The Reddit discussion on EA's anti-cheat system exemplifies widespread distrust, with users questioning why games require such invasive software and expressing suspicion about potential misuse of kernel-level access \cite{reddit}.
+
+Transparency appears to be a critical factor influencing trust. Sources indicate that companies providing detailed technical documentation and clear explanations about their anti-cheat systems face less skepticism than those offering vague or minimal information \cite{gist}. However, even when companies attempt transparency, users with technical backgrounds express doubts about verifiability, noting that claims about data limitations cannot be independently verified \cite{gist}.
+
+The proprietary nature of most kernel-level anti-cheat systems contributes to trust issues. Users cannot inspect the code or verify security implementations, leading to what the GitHub analysis describes as ``blind trust in companies with varying security track records'' \cite{gist}. This lack of verifiability is particularly concerning to technically literate users, who are accustomed to open-source software where code can be audited.
+
+Historical context influences trust levels. Companies with poor privacy track records or previous security incidents face heightened skepticism. Community discussions suggest that users' general trust in gaming companies has decreased due to kernel-level anti-cheat requirements \cite{reddit}. However, some sources note exceptions: companies that have invested in transparent communication and security documentation receive relatively higher trust, though skepticism remains the dominant sentiment.
+
+The forced adoption model significantly impacts trust. Users express resentment toward being required to install kernel-level drivers as a condition of accessing purchased games \cite{reddit}. This requirement, combined with the inability to opt out while retaining game access, erodes trust by suggesting that companies prioritize their interests over user privacy and choice.
+
+\subsection{Acceptance and Willingness to Use}
+
+Despite widespread privacy concerns and low trust levels, evidence suggests that many users ultimately accept kernel-level anti-cheat systems due to limited alternatives. The Levvvel database documenting 338 games using kernel-level anti-cheat indicates significant adoption across the industry \cite{levvvel}. This suggests that users either accept these systems or abandon games they wish to play.
+
+Community discussions reveal a complex acceptance pattern. Many users express concerns but continue playing games with kernel-level anti-cheat because they value fair gameplay and have few alternatives \cite{reddit}. This suggests a willingness to trade privacy for competitive integrity. However, the trade-off is often made reluctantly rather than enthusiastically. As one Reddit discussion notes, users feel ``stuck between wanting fair games and wanting privacy'' \cite{reddit}.
+
+The prevalence of Easy Anti-Cheat, found in 155 games including major titles like Fortnite and Apex Legends \cite{levvvel}, indicates that users accept these systems when bundled with popular games. However, acceptance does not necessarily indicate approval. Many discussions suggest users ``grudgingly accept'' rather than ``enthusiastically embrace'' kernel-level anti-cheat \cite{reddit}. This distinction between behavioural acceptance and attitudinal approval is crucial: users may use systems they disapprove of when alternatives are unavailable.
+
+Factors influencing acceptance include game popularity, competitive gaming engagement, and lack of viable alternatives. Users heavily invested in specific games or competitive scenes appear more willing to accept kernel-level anti-cheat than casual players \cite{reddit}. However, some users report completely avoiding games that require kernel-level anti-cheat, suggesting that privacy concerns do lead to rejection in some cases \cite{reddit, gist}.
+
+Notable exceptions to acceptance patterns exist. Technically literate users, particularly those in cybersecurity and related fields, demonstrate higher rejection rates \cite{gist}. These users more frequently cite privacy and security concerns as reasons to avoid games with kernel-level anti-cheat, suggesting that technical knowledge correlates with lower acceptance levels.
+
+\subsection{Factors Influencing Perceptions}
+
+Technical knowledge emerges as the strongest predictor of perception patterns across all sources examined. Users with cybersecurity or technical backgrounds consistently express stronger concerns about kernel-level anti-cheat systems compared to general users \cite{gist}. The GitHub technical analysis, written from a cybersecurity perspective, demonstrates the depth of concern among technically literate users, who understand the full implications of kernel-level access \cite{gist}.
+
+Technically knowledgeable users demonstrate greater awareness of security vulnerabilities, privacy implications, and system risks. They are more likely to question company transparency claims, understand rootkit comparisons, and recognize potential attack vectors. These users frequently cite their technical understanding as the reason for privacy concerns and lower acceptance levels \cite{gist}.
+
+Gaming habits and engagement levels also influence perceptions. Competitive and professional gamers, despite often having technical knowledge, demonstrate higher acceptance rates due to their investment in fair gameplay and professional opportunities \cite{reddit}. Casual gamers show more variability, with some expressing strong privacy concerns while others remain indifferent if they are unaware of the technical details \cite{reddit}.
+
+Awareness of security incidents or vulnerabilities significantly impacts perceptions. Users who learn about kernel-level anti-cheat vulnerabilities or security breaches express heightened concerns \cite{xda}. The XDA article documenting security risks influences perceptions by providing concrete examples of potential dangers \cite{xda}.
+
+Prior experience with anti-cheat systems shapes perceptions. Users who have experienced false positives, performance issues, or system problems with kernel-level anti-cheat express more negative perceptions than those without such experiences \cite{reddit}. Negative experiences appear to amplify privacy and security concerns.
+
+Cultural and regional factors may influence perceptions, though evidence is limited. The Levvvel database shows regional variations in anti-cheat adoption, with Korean-developed games frequently using nProtect GameGuard or XIGNCODE3 \cite{levvvel}, suggesting different acceptance patterns in different markets. However, the sources examined primarily reflect Western perspectives, limiting cross-cultural analysis.
+
+\subsection{Comparative Analysis: Technical vs. Non-Technical Users}
+
+A clear divide exists between technically literate users and general users regarding kernel-level anti-cheat perceptions. This division is particularly relevant for students in technical fields, who represent an important demographic likely to interact with these systems while possessing elevated technical awareness.
+
+Technically literate users, including students in cybersecurity, computer science, and engineering fields, demonstrate markedly different perception patterns compared to general users. The GitHub Gist analysis provides a representative technical perspective, demonstrating deep concern about security implications, privacy risks, and system vulnerabilities \cite{gist}. These users understand kernel architecture, privilege levels, and security implications, leading to more critical evaluations.
+
+Technical users are significantly more likely to:
+\begin{itemize}
+    \item Recognize and articulate specific security risks (privilege escalation, driver vulnerabilities, system compromise)
+    \item Question transparency claims and demand verifiable evidence
+    \item Compare kernel-level anti-cheat to rootkits and malware based on technical understanding
+    \item Express willingness to avoid games requiring kernel-level anti-cheat
+    \item Identify potential attack vectors and exploitation risks
+\end{itemize}
+
+In contrast, general users demonstrate:
+\begin{itemize}
+    \item Lower awareness of technical implications
+    \item Greater reliance on company statements and trust
+    \item More acceptance based on perceived necessity for fair gameplay
+    \item Less understanding of security risks and privacy implications
+    \item Greater variability in concerns, often driven by anecdotal experiences rather than technical knowledge
+\end{itemize}
+
+The XDA Developers article, written for a technically informed audience, emphasizes security risks and technical concerns \cite{xda}, reflecting the priorities of technically literate users. In contrast, general gaming community discussions on Reddit show mixed perspectives, with many users expressing concerns based on privacy discomfort rather than technical understanding \cite{reddit}.
+
+Students in technical fields occupy an intermediate position: they possess growing technical knowledge that enables critical evaluation, while simultaneously representing current users of gaming systems. This makes their perceptions particularly valuable for understanding how technical literacy shapes acceptance and concern patterns. As technical knowledge increases, privacy and security concerns typically increase while acceptance decreases \cite{gist, reddit}.
+
+\subsection{Gaps in Existing Research}
+
+Despite extensive discussion in technical communities and public discourse, significant gaps exist in empirical research on user perceptions of kernel-level anti-cheat systems. This literature review identifies several critical areas requiring further investigation.
+
+\paragraph{Empirical User Perception Studies}
+The most significant gap is the lack of quantitative empirical research on user perceptions. While community discussions and technical analyses provide valuable insights, systematic survey-based or experimental studies measuring user awareness, concerns, trust, and acceptance are largely absent. Research quantifying these variables across different user demographics would provide valuable empirical grounding for current observations.
+
+\paragraph{Student-Specific Research}
+While students, particularly those in technical fields, represent an important demographic, no focused empirical research specifically examines student perceptions. Studies investigating how students in cybersecurity, computer science, and related fields evaluate kernel-level anti-cheat systems would address the specific research interest in this demographic while providing insights into how technical education shapes privacy and security perspectives.
+
+\paragraph{Longitudinal Studies}
+All existing sources provide cross-sectional perspectives. Longitudinal research examining how perceptions evolve over time, particularly as users become more familiar with kernel-level anti-cheat or after security incidents, would provide valuable insights into perception dynamics and long-term acceptance patterns.
+
+\paragraph{Cross-Cultural Analysis}
+The sources examined primarily reflect Western perspectives, with limited analysis of regional differences. The Levvvel database shows varied adoption patterns (e.g., Korean markets favouring nProtect GameGuard and XIGNCODE3 \cite{levvvel}), suggesting potential cultural or regional differences in acceptance that warrant investigation.
+
+\paragraph{Trust Dynamics}
+While trust appears critical to acceptance, little empirical research examines trust formation, factors influencing trust levels, or how transparency initiatives impact trust. Understanding trust dynamics would help developers balance security needs with user acceptance.
+
+\paragraph{Privacy-Fairness Trade-offs}
+The literature consistently notes a privacy-fairness trade-off, but no empirical studies quantify how users evaluate this trade-off or what factors influence their willingness to sacrifice privacy for fair gameplay. Research examining decision-making processes and trade-off evaluations would address a central question in the debate.
+
+\paragraph{Impact of Security Incidents}
+While sources note that security vulnerabilities affect perceptions, no research systematically examines how specific incidents influence user perceptions, trust, or acceptance. Understanding incident impact would inform risk communication and transparency strategies.
+
+\paragraph{Effectiveness vs. Privacy}
+The literature focuses primarily on privacy concerns but provides limited discussion of whether kernel-level anti-cheat actually provides superior effectiveness compared to user-level alternatives. Research comparing effectiveness alongside privacy costs would enable informed cost-benefit evaluations.
+
+These gaps highlight opportunities for future empirical research that would significantly advance understanding of user perceptions and inform both industry practices and policy considerations.
+
+% -------------------------------------------------------------
+\section{Discussion}
+% -------------------------------------------------------------
+
+This discussion synthesizes findings from the literature review, interprets their implications, and addresses the research questions and propositions guiding this investigation. Synthesized evidence reveals a complex landscape of user perceptions marked by significant concerns, reluctant acceptance, and a clear divide between technically literate and general users.
+
+\subsection{Interpretation of Key Findings}
+
+Evidence indicates that user perceptions of kernel-level anti-cheat systems are predominantly negative. These perceptions are driven primarily by privacy concerns, security risks, and trust issues. However, despite these concerns, widespread adoption (338 games implementing kernel-level anti-cheat \cite{levvvel}) suggests that users ultimately accept these systems, often reluctantly, due to limited alternatives and desire for fair gameplay.
+
+Technical literacy emerges as the strongest determinant of perception patterns. Users with technical backgrounds, including students in cybersecurity and related fields, demonstrate heightened awareness of risks, stronger privacy concerns, and lower acceptance levels compared to general users. This finding supports Proposition P3, suggesting that technical knowledge correlates with stronger concerns about kernel-level drivers, as reflected in technical community discussions \cite{gist}.
+
+The privacy-fairness trade-off represents a central tension in user perceptions. Users value both competitive integrity and privacy, but existing systems force a binary choice that favours gameplay access over privacy preferences. This supports Proposition P4: despite concerns, many users sacrifice privacy for fair gameplay, though the sacrifice appears reluctant rather than enthusiastic \cite{reddit}.
+
+\subsection{Addressing Research Questions}
+
+\paragraph{Research Question 1: User Awareness}
+Evidence indicates significant variation in awareness levels. Technically literate users demonstrate substantially higher awareness than general users. Many users remain unaware of kernel-level anti-cheat characteristics until they encounter specific requirements or engage with technical discussions. Awareness correlates strongly with engagement with technical communities and educational content \cite{piratevideo, gist}.
+
+\paragraph{Research Question 2: Acceptability Evaluation}
+User evaluations of acceptability are generally negative, though acceptance levels vary based on technical knowledge, gaming habits, and availability of alternatives. Most users express concerns but ultimately accept kernel-level anti-cheat when required for game access. Technically literate users demonstrate lower acceptance rates, while competitive gamers show higher acceptance despite concerns \cite{reddit, gist}.
+
+\paragraph{Research Question 3: Primary Concerns}
+Privacy, security vulnerabilities, and lack of transparency emerge as the dominant concerns. Privacy concerns centre on unrestricted system access and data collection capabilities. Security concerns focus on vulnerability risks and system compromise potential. Transparency concerns reflect frustration with vague or unverifiable company statements about data collection and monitoring practices \cite{xda, gist, reddit}.
+
+\paragraph{Research Question 4: Trust Levels}
+Trust levels are generally low, driven by transparency issues, proprietary code, and forced adoption requirements. Companies providing detailed documentation receive relatively higher trust, but skepticism remains widespread. The forced binary choice (accept anti-cheat or lose game access) erodes trust by suggesting company priorities override user privacy preferences \cite{reddit, gist}.
+
+\paragraph{Research Question 5: Influencing Factors}
+Technical knowledge, gaming habits, prior experiences, and awareness of security incidents all influence perceptions. Technical knowledge correlates most strongly with concerns and lower acceptance. Gaming engagement levels and competitive participation influence acceptance despite concerns. Negative experiences amplify concerns, while awareness of vulnerabilities heightens risk perception \cite{gist, reddit, xda}.
+
+\paragraph{Research Question 6: Research Gaps}
+Critical gaps include lack of empirical quantitative studies, absence of student-focused research, no longitudinal studies, limited cross-cultural analysis, insufficient research on trust dynamics, and minimal investigation of privacy-fairness trade-off evaluations.
+
+\subsection{Evaluating Propositions}
+
+Evidence supports Proposition P1 (awareness correlates with privacy concerns): technically aware users consistently express stronger privacy concerns \cite{gist}. Proposition P2 (lower trust toward companies) receives strong support from community discussions demonstrating widespread skepticism \cite{reddit}. Proposition P3 (technical knowledge correlates with concerns) is well-supported by technical community perspectives \cite{gist}. Proposition P4 (willingness to sacrifice privacy) is supported by adoption patterns despite concerns \cite{levvvel, reddit}. Proposition P5 (invasiveness negatively correlates with acceptance) receives partial support. Acceptance persists despite high invasiveness perceptions, suggesting other factors—game popularity and lack of alternatives—also influence acceptance decisions \cite{reddit}.
+
+\subsection{Effectiveness Versus Privacy Trade-Off}
+
+A central tension in the kernel-level anti-cheat debate concerns whether enhanced detection effectiveness justifies privacy costs. However, empirical comparison of effectiveness presents significant methodological challenges. Controlled comparative studies are difficult to conduct: cheat developers actively evade detection, creating an adversarial environment where detection rates change rapidly. Additionally, companies rarely disclose detailed effectiveness metrics, citing competitive security reasons. Published comparisons often rely on anecdotal evidence or company claims rather than independent verification.
+
+Despite measurement difficulties, developers consistently justify kernel-level implementations based on superior detection capabilities against sophisticated cheats that exploit kernel-level vulnerabilities themselves. The technical rationale posits that advanced cheat techniques, including kernel-mode drivers and memory manipulation at Ring 0, require equivalent privilege levels for reliable detection. This architectural argument suggests that user-level anti-cheat systems face fundamental limitations against sophisticated threats, though quantitative evidence validating this claim remains limited in public sources.
+
+The effectiveness-privacy tension reflects a fundamental question: whether the assumed security benefits justify the privacy and security risks inherent in kernel-level access. Users, particularly those with technical knowledge, frequently question whether effectiveness gains are substantial enough to warrant the security exposure that kernel-level drivers create. This questioning occurs despite limited empirical data on comparative effectiveness, highlighting how perceived trade-offs, rather than verified effectiveness differences, shape user acceptance.
+
+\subsection{Ethical Implications}
+
+Significant ethical concerns surround kernel-level anti-cheat systems. The forced adoption model raises questions about informed consent and user autonomy. Users face a binary choice that effectively coerces acceptance regardless of privacy preferences, challenging principles of informed consent and user agency \cite{reddit, gist}.
+
+The transparency deficit creates ethical concerns about accountability and user rights. Users cannot verify company claims about data collection and monitoring, creating an asymmetric information relationship that disadvantages users \cite{gist}. This asymmetry raises questions about fair terms of service and meaningful consent.
+
+Security vulnerability risks present ethical dilemmas regarding responsibility. When kernel-level anti-cheat systems introduce vulnerabilities, companies control security-critical software that users cannot avoid if they wish to access purchased games \cite{xda}. This creates accountability questions about security failures in required software.
+
+\subsection{Limitations of the Literature}
+
+Several limitations affect this literature review. First, sources predominantly reflect Western perspectives, limiting cross-cultural understanding. Second, community discussions may overrepresent negative reactions, as satisfied users may not participate in public discourse. Third, the absence of empirical quantitative research means findings rely on qualitative analysis and anecdotal evidence. Fourth, rapidly evolving technology means perceptions may change as users become more familiar with kernel-level anti-cheat. Finally, company perspectives are underrepresented, potentially missing legitimate justifications for kernel-level implementations.
+
+Despite these limitations, the synthesis provides valuable insights into current user perceptions and identifies critical areas requiring further investigation.
+
+% -------------------------------------------------------------
+\section{Conclusion}
+% -------------------------------------------------------------
+
+This literature review has synthesized existing knowledge on user perceptions of kernel-level anti-cheat systems, revealing a landscape marked by significant concerns, reluctant acceptance, and a clear divide between technically literate and general users. The review contributes to understanding how users evaluate the privacy-fairness trade-off inherent in modern anti-cheat systems.
+
+\subsection{Key Findings Summary}
+
+The review demonstrates that user perceptions are predominantly negative, driven by privacy concerns, security vulnerability risks, and low trust levels toward game developers. Despite these concerns, widespread adoption (338 games implementing kernel-level anti-cheat \cite{levvvel}) indicates reluctant acceptance due to limited alternatives and desire for fair gameplay. Technical literacy emerges as the strongest predictor of perception patterns, with technically literate users, including students in cybersecurity and related fields, expressing stronger concerns and lower acceptance levels compared to general users.
+
+The privacy-fairness trade-off represents a central tension: users value both competitive integrity and privacy, but existing systems force a binary choice. Most users reluctantly sacrifice privacy for game access, though technically literate users demonstrate higher resistance. Trust levels remain low, driven by transparency deficits, proprietary code, and forced adoption requirements. This pattern indicates that behavioural acceptance does not reflect attitudinal approval, as users may comply with requirements while maintaining strong disapproval.
+
+\subsection{Main Contributions}
+
+This review contributes several key insights that advance understanding beyond existing fragmented literature. First, it systematically synthesizes fragmented knowledge across academic discourse, technical documentation, and community perspectives, creating the first comprehensive overview of user perception patterns. This synthesis enables identification of consistent themes and contradictions that individual sources cannot reveal. Second, it identifies technical literacy as a critical factor shaping perceptions, with implications for understanding how students and future technology professionals evaluate privacy-security trade-offs. Third, it documents the privacy-fairness tension that characterizes user decision-making, revealing how acceptance patterns differ from approval. Fourth, it identifies critical gaps in empirical research, providing a roadmap for future investigation priorities. Together, these contributions establish a foundation for evidence-based discussions of kernel-level anti-cheat systems and inform both academic research directions and industry practice considerations.
+
+\subsection{Implications for Developers and Policymakers}
+
+For game developers, findings suggest that transparency and communication significantly influence trust and acceptance. Companies providing detailed technical documentation, clear explanations of data practices, and verifiable security implementations may face less skepticism. However, fundamental concerns about kernel-level access persist regardless of transparency efforts, suggesting that technical solutions alone may not fully address user concerns.
+
+The forced adoption model emerges as a significant trust and acceptance barrier. Developers might consider alternative approaches that provide meaningful choice, such as opt-in kernel-level modes for competitive play while maintaining user-level anti-cheat for casual modes. Such approaches could respect user privacy preferences while maintaining competitive integrity.
+
+For policymakers, findings highlight privacy and security concerns surrounding required kernel-level software. The lack of meaningful consent, transparency deficits, and security vulnerability risks suggest potential need for regulation or industry standards. Policy considerations might include requirements for transparency, data minimization, security auditing, and meaningful user choice.
+
+The findings regarding technical literacy and student perspectives suggest that future technology professionals entering the industry will bring heightened privacy awareness and skepticism toward invasive security measures. This may influence industry practices as these professionals assume development and policy roles.
+
+\subsection{Recommendations for Future Research}
+
+This review identifies critical research gaps requiring empirical investigation. Priority areas include:
+
+\begin{enumerate}
+    \item \textbf{Quantitative Empirical Studies:} Systematic survey-based research measuring user awareness, concerns, trust, and acceptance across diverse demographics.
+    \item \textbf{Student-Focused Research:} Studies specifically examining perceptions among students in technical fields, addressing how technical education shapes privacy and security perspectives.
+    \item \textbf{Longitudinal Studies:} Research tracking perception evolution over time, particularly as users gain familiarity with kernel-level anti-cheat or after security incidents.
+    \item \textbf{Cross-Cultural Analysis:} Investigation of regional and cultural differences in acceptance patterns and privacy concerns.
+    \item \textbf{Trust Dynamics Research:} Empirical studies examining trust formation, factors influencing trust, and impact of transparency initiatives.
+    \item \textbf{Privacy-Fairness Trade-off Studies:} Research quantifying how users evaluate trade-offs and what factors influence willingness to sacrifice privacy.
+    \item \textbf{Effectiveness Comparison:} Studies comparing kernel-level versus user-level anti-cheat effectiveness, enabling informed cost-benefit evaluations.
+\end{enumerate}
+
+\subsection{Concluding Remarks}
+
+Kernel-level anti-cheat systems represent a significant technological and ethical development in gaming security, raising fundamental questions about privacy, trust, and user agency. Evidence indicates that users, particularly those with technical literacy, recognize and express concerns about these implications while often accepting systems due to limited alternatives. As these technologies continue to proliferate—currently implemented in 338 games \cite{levvvel}—understanding user perceptions becomes increasingly important for developers, policymakers, and the academic community.
+
+The clear divide between technically literate and general users suggests that as technical education expands and privacy awareness increases, acceptance patterns may shift. Students in technical fields, representing future industry professionals and informed technology users, demonstrate heightened concerns that may influence future industry practices. This makes their perspectives particularly valuable for understanding both current perceptions and future trajectories.
+
+Addressing the identified research gaps through empirical investigation will provide the evidence base needed to inform industry practices, policy considerations, and ethical frameworks surrounding kernel-level anti-cheat systems. Such research will contribute to developing approaches that balance security needs, competitive integrity, and user privacy in ways that respect user agency and informed consent.
 
 % -------------------------------------------------------------
 \section*{References}
