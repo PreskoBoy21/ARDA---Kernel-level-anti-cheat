@@ -1,146 +1,130 @@
 # Research Objectives
 
-In a **quantitative study**, the aims are to:
+In a **literature review**, the aims are to:
 
-- **Measure Awareness**: Quantify how aware students are of kernel-level anti-cheat systems.  
-- **Gauge Acceptability**: Determine how acceptable students find kernel-level anti-cheat technology.  
-- **Assess Concerns**: Quantify specific concerns (privacy, performance, security) that influence acceptance.  
-- **Identify Trust Levels**: Measure how much trust students place in developers/companies using this technology.  
-- **Correlate with Background Factors**: Explore links between factors (e.g., gaming experience, tech knowledge) and opinions on kernel-level anti-cheat.  
+- **Synthesize Awareness Research**: Synthesize existing research and discourse on user awareness of kernel-level anti-cheat technologies and associated risks.
+- **Analyse Acceptance Patterns**: Analyse patterns in user acceptance and attitudes toward games requiring kernel-level anti-cheat systems as reflected in academic literature and public discourse.
+- **Consolidate Concerns**: Review and consolidate findings on privacy concerns, security worries, and trust in game developers among users.
+- **Identify Influencing Factors**: Identify factors (technical knowledge, gaming habits, demographic characteristics) that influence user perceptions, as documented in existing research and discussions.
+- **Examine Perceived Invasiveness**: Examine how perceived invasiveness relates to acceptance of these technologies, based on existing evidence.
+- **Identify Research Gaps**: Identify gaps in current knowledge and areas requiring further empirical research.
 
 ---
 
 # Research Methodology
 
-## 1. Research Design: Quantitative Survey
-- **Structured Survey**: Closed-ended questions (multiple-choice, Likert scales).  
-- **Scalability**: Distribute online for ease of access.  
-- **Sample Size**: 100–200 students for robust statistical analysis.  
+## 1. Research Design: Systematic Literature Review
+- **Literature Review Approach**: Systematic synthesis of existing knowledge across multiple source types.
+- **Source Integration**: Combines academic research, technical documentation, technology journalism, and community discourse.
+- **Scope**: Comprehensive overview of user perceptions rather than primary data collection.
+- **Purpose**: Identify patterns, contradictions, and gaps in existing understanding.
 
 ---
 
-## 2. Sampling Strategy
-- **Stratified Sampling**: Capture responses across demographics (e.g., major, gaming habits).  
-- **Incentives**: Consider offering participation rewards to boost response rates.  
+## 2. Source Types
+
+Sources included in the review:
+
+- **Academic Research**: Peer-reviewed articles, conference papers, academic databases (Google Scholar, IEEE Xplore, ACM Digital Library)
+- **Technical Documentation**: Official whitepapers and documentation from Riot Games (Vanguard), Epic Games (Easy Anti-Cheat), BattlEye
+- **Technology Journalism**: Reputable technology publications (e.g., XDA Developers)
+- **Community Discourse**: Platforms like Reddit and GitHub discussions
+- **Industry Data**: Gaming industry databases tracking anti-cheat adoption (e.g., Levvvel)
 
 ---
 
-## 3. Data Collection
-- **Survey Platform**: Use online tools (Google Forms, SurveyMonkey).  
-- **Anonymity**: Ensure anonymous responses to encourage honesty.  
+## 3. Literature Search Strategy
+
+### Search Terms
+Combinations of: ``kernel-level anti-cheat,'' ``anti-cheat privacy,'' ``game security privacy concerns,'' ``rootkit anti-cheat,'' ``Riot Vanguard,'' ``gaming privacy ethics.''
+
+### Selection Criteria
+- **Relevance**: Sources must address user perceptions, privacy concerns, trust, acceptance, or ethical considerations
+- **Recency**: Preference for sources from 2020 onwards (reflecting recent proliferation)
+- **Credibility**: Peer-reviewed work, official documentation, reputable journalism, substantial community discussions
+- **Accessibility**: Publicly accessible or available through academic databases
 
 ---
 
-## 4. Data Analysis
-- **Descriptive Statistics**: Calculate means, medians, frequencies.  
-- **Comparative Analysis**: Compare subgroups (gamers vs. non-gamers, tech vs. non-tech students).  
-- **Correlation & Regression**: Test relationships (e.g., does tech knowledge correlate with acceptance?).  
+## 4. Data Extraction and Analysis
+
+### Source Classification
+Sources categorized by type:
+1. Academic research
+2. Technical documentation
+3. Technology journalism
+4. Community discourse
+5. Industry data/statistics
+
+### Thematic Analysis
+Content analyzed to identify recurring themes:
+- User awareness and knowledge of kernel-level anti-cheat systems
+- Privacy concerns and perceived risks
+- Trust in game developers and companies
+- Acceptance and willingness to use games with kernel-level anti-cheat
+- Factors influencing perceptions (technical knowledge, gaming habits, etc.)
+- Ethical considerations and debates
+
+### Synthesis Process
+- Comparing perspectives across different source types
+- Identifying areas of agreement and disagreement
+- Noting gaps in existing knowledge
+- Examining how different user groups are represented (technically literate vs. general users, students vs. broader demographics)
 
 ---
 
-# Survey Questions
+# Research Questions
 
-## 1. Awareness and Knowledge
-**Q1.** Before this survey, were you aware of kernel-level anti-cheat systems?  
-- Yes, very aware  
-- Somewhat aware  
-- Not at all aware  
+Based on the research problem and objectives, the following research questions guide this literature review:
 
-**Q2.** How knowledgeable are you about the technical details?  
-- Very knowledgeable  
-- Somewhat knowledgeable  
-- Not knowledgeable  
+1. **Awareness**: What do existing sources reveal about user awareness of kernel-level anti-cheat systems and their implications?
+2. **Acceptability**: How do users evaluate the acceptability of kernel-level anti-cheat technologies in online games, according to existing research and discourse?
+3. **Primary Concerns**: What are the primary concerns (privacy, security, transparency) that influence user perceptions, as documented in the literature?
+4. **Trust Levels**: What levels of trust do users place in game developers and companies that implement kernel-level anti-cheats, based on existing evidence?
+5. **Influencing Factors**: What factors (technical knowledge, gaming experience, demographic characteristics) are associated with user acceptance or rejection of kernel-level anti-cheat systems in existing research?
+6. **Research Gaps**: What gaps exist in current understanding of user perceptions that require further empirical investigation?
 
 ---
 
-## 2. General Perception and Acceptance
-**Q3.** On a scale of 1–5, how acceptable do you find kernel-level anti-cheat in games?  
-1 (Not acceptable) → 5 (Completely acceptable)  
+# Research Propositions
 
-**Q4.** Would you continue to play a game if it required kernel-level anti-cheat?  
-- Yes, without hesitation  
-- Yes, but with concerns  
-- No, I would avoid it  
+Based on the context, research problem, and objectives, the following propositions derived from existing literature guide this review:
 
----
-
-## 3. Privacy and Security Concerns
-**Q5.** How concerned are you about the privacy implications?  
-- Very concerned  
-- Somewhat concerned  
-- Not concerned  
-
-**Q6.** “Kernel-level anti-cheat systems invade my privacy.”  
-- Strongly agree  
-- Agree  
-- Neutral  
-- Disagree  
-- Strongly disagree  
+- **P1**: Users with greater awareness of kernel-level anti-cheat systems exhibit higher levels of privacy concerns, as suggested by technical communities and cybersecurity discussions.
+- **P2**: Users exhibit lower trust toward companies that implement kernel-level anti-cheats, as evidenced in public discourse and community discussions.
+- **P3**: Users with greater technical knowledge express stronger concerns about kernel-level drivers, as reflected in cybersecurity and technical community perspectives.
+- **P4**: Despite concerns, some users are willing to sacrifice privacy for fair gameplay, as indicated by continued adoption of games requiring kernel-level anti-cheat.
+- **P5**: Higher perceived invasiveness negatively correlates with acceptance of kernel-level anti-cheat systems, as suggested by privacy-focused discussions and user complaints.
 
 ---
 
-## 4. System Performance and Control
-**Q7.** Have you experienced performance issues caused by anti-cheat?  
-- Yes, often  
-- Yes, occasionally  
-- No, never  
-- Not applicable  
+# Analysis Plan
 
-**Q8.** How important is control over software running at the kernel level?  
-- Extremely important  
-- Important  
-- Somewhat important  
-- Not important  
+## 1. Source Quality Assessment
+- **Academic Sources**: Peer review status, methodology rigor, sample size and representativeness (where applicable)
+- **Technical Documentation**: Official source status, technical accuracy, completeness of information
+- **Journalism and Community Sources**: Author credibility, source verification, breadth of perspective represented
 
----
+## 2. Thematic Synthesis
+- Identify consistent themes across source types
+- Document contradictions and areas of disagreement
+- Analyze how different perspectives (technical vs. general users) shape findings
+- Note limitations and biases in different source types
 
-## 5. Trust in Developers and Software Companies
-**Q9.** To what extent do you trust game developers to use kernel-level anti-cheat responsibly?  
-- Complete trust  
-- Moderate trust  
-- Little trust  
-- No trust at all  
+## 3. Gap Identification
+- Identify areas where empirical research is lacking
+- Note questions unanswered by current literature
+- Highlight inconsistencies in existing knowledge
+- Recommend priorities for future research
 
-**Q10.** Would a good privacy track record make you more likely to trust a company?  
-- Yes  
-- No  
-- Not sure  
-
----
-
-## 6. Comparative Preferences and Alternatives
-**Q11.** Would you prefer less invasive anti-cheat, even if less effective?  
-- Yes  
-- No  
-- Neutral  
-
-**Q12.** On a scale of 1–5, how effective do you think kernel-level anti-cheat is compared to others?  
-1 (Not effective) → 5 (Very effective)  
-
----
-
-## 7. Background and Demographics
-**Q13.** How frequently do you play games?  
-- Daily  
-- Weekly  
-- Monthly  
-- Rarely  
-
-**Q14.** What is your field of study?  
-- Computer Science / Cybersecurity  
-- Game Design / Development  
-- Engineering  
-- Other (please specify)  
-
----
-
-# Data Analysis Plan
-- **Descriptive Statistics**: Summarize general attitudes (means, frequencies).  
-- **Cross-Tabulations**: Compare opinions by gaming frequency, field of study, technical background.  
-- **Correlation Analysis**: Explore links (e.g., trust vs. acceptance, privacy concerns vs. willingness).  
-- **Regression Analysis**: Predict acceptance of kernel-level anti-cheat based on privacy, trust, and gaming habits.  
+## 4. Comparative Analysis
+- Compare perspectives between technically literate and general users
+- Analyze differences in concerns, trust, and acceptance patterns
+- Examine how source type (academic vs. community discourse) influences findings
+- Identify consensus areas vs. contested claims
 
 ---
 
 # Conclusion
-This **quantitative approach** enables statistically measurable insights into student perceptions of kernel-level anti-cheat. The structured survey design provides data-driven conclusions and helps identify key predictors of acceptance, trust, and concern in the gaming context.  
+
+This **literature review approach** enables comprehensive synthesis of fragmented knowledge on user perceptions of kernel-level anti-cheat systems. By systematically integrating diverse source types—academic research, technical documentation, technology journalism, and community discourse—this review provides a holistic overview that individual sources cannot achieve alone. The thematic analysis and synthesis identify consistent patterns, reveal contradictions, and highlight critical gaps in current understanding, thereby establishing a foundation for evidence-based discussions and guiding future empirical research priorities.
